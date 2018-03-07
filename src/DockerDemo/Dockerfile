@@ -4,9 +4,9 @@ EXPOSE 80
 
 FROM microsoft/aspnetcore-build:2.0 AS build
 WORKDIR /src
-COPY *.sln ./
+COPY DockerDemo.sln ./
 COPY DockerDemo/DockerDemo.csproj DockerDemo/
-RUN dotnet restore
+RUN dotnet restore -nowarn:msb3202,nu1503
 COPY . .
 WORKDIR /src/DockerDemo
 RUN dotnet build -c Release -o /app

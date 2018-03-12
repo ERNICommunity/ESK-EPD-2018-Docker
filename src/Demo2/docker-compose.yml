@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  dockerdemo:
+    image: dockerdemo
+    build:
+      context: .
+      dockerfile: DockerDemo/Dockerfile
+    links:
+      - redis
+  redis:
+    image: redis:latest

@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.0</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>72378e09-effc-446e-af07-86ab1f3079e7</ProjectGuid>
+    <ProjectGuid>bdc8369b-9fb3-4204-b05b-d8a4461e3a81</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>http://localhost:{ServicePort}/api/values</DockerServiceUrl>
     <DockerServiceName>dockerdemo</DockerServiceName>

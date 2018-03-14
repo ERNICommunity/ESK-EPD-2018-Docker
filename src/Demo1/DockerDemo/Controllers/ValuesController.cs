@@ -11,9 +11,9 @@ namespace DockerDemo.Controllers
     {
         // GET api/values
         [HttpGet]
-        public string Get()
+        public IEnumerable<string> Get()
         {
-            return System.Runtime.InteropServices.RuntimeInformation.OSDescription;
+            return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5

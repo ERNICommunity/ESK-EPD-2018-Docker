@@ -6,7 +6,11 @@ services:
     build:
       context: .
       dockerfile: DockerDemo/Dockerfile
-    links:
-      - redis
+    networks:
+      - appnet
   redis:
     image: redis:latest
+    networks:
+      - appnet
+networks:
+  appnet:

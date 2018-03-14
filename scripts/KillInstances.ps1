@@ -1,1 +1,1 @@
-﻿& docker stop $(docker ps -q --filter ancestor="dockerdemo" )
+﻿& docker stop $(docker ps -q --filter ancestor="mar3ek/esk-epd-2018-docker" )
